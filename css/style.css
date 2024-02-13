@@ -1,0 +1,133 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner-inicio {
+    text-align: center;
+}
+
+#foto-campus {
+    height: 300px;
+}
+
+.titulo {
+    color: green;
+    text-align: center;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+nav a:hover {
+    color: green;
+}
+
+.botao-spoiler {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-spoiler img{
+    width: 200px;
+}
+
+/* Jogo */
+.dados-jogador {
+    padding: 10px
+}
+
+.jogador {
+    color: black;
+    display: flex;
+    justify-content: left;
+}
+
+.jogo {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid grey;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E8F6FF);
+}
+
+.robo {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.cone {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    /* animation: animacao-cone 3s infinite linear;  */
+}
+
+.ceu {
+    position: absolute;
+    width: 400px;
+    /* animation: animacao-ceu 10s infinite linear; */
+}
+
+.pular {
+    animation: pulo 1s ease-out;
+}
+
+@keyframes animacao-cone {
+    from {
+        right: -120px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pulo {
+    0% {
+            bottom: 0;
+        }
+    
+        30% {
+            bottom: 180px;
+        }
+    
+        50% {
+            bottom: 180px;
+        }
+    
+        70% {
+            bottom: 180px;
+        }
+    
+        100% {
+            bottom: 0;
+        }
+}
+
+@keyframes animacao-ceu {
+    from {
+            right: -400px;
+        }
+    
+        to {
+            right: 100%;
+        }
+}
